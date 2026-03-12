@@ -22,7 +22,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           validate-wrappers: false
-          gradle-version: "9.0"
+          gradle-version: "9.0.0"
 
       - name: Build
         run: gradle build
