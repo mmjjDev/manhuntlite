@@ -22,12 +22,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           validate-wrappers: false
+          gradle-version: "9.0"
 
-      - name: Make Gradle Wrapper executable
-        run: chmod +x ./gradlew
-
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Build
+        run: gradle build
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
