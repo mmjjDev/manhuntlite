@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "manhuntlite",
+  "version": "${version}",
+  "name": "ManhuntLite",
+  "description": "Dream-style Manhunt with Player Locator Bar tracking. Server-side only.",
+  "authors": [
+    "ManhuntLite Team"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.manhunt.ManhuntLite"
+    ]
+  },
+  "mixins": [
+    "manhuntlite.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
